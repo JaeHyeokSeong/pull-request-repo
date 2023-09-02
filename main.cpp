@@ -19,12 +19,12 @@ int factorial(int number) {
     return number * factorial(number - 1);
 }
 
-int multiply(int* numbers, int size) {
-    int total = 1;
-    for(int i = 0; i < size; i++) {
-        total *= numbers[i];
-    }
-    return total;
+int multiply(const std::vector<int>& numbers) {
+   int total = 1;
+   for(const int number : numbers) {
+       total *= number;
+   }
+   return total;
 }
 
 int main() {
