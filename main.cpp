@@ -19,6 +19,14 @@ int factorial(int number) {
     return number * factorial(number - 1);
 }
 
+int multiply(int* numbers, int size) {
+    int total = 1;
+    for(int i = 0; i < size; i++) {
+        total *= numbers[i];
+    }
+    return total;
+}
+
 int main() {
     std::cout << "hello world\n";
     return 0;
