@@ -13,6 +13,12 @@ int add(const std::vector<int>& numbers) {
     return total;
 }
 
+// 0! = 1, 1! = 1, 2!= 2, 3! = 6, 4! = 24
+int factorial(int number) {
+    if(number == 0 || number == 1) return 1;
+    return number * factorial(number - 1);
+}
+
 int main() {
     std::cout << "hello world\n";
     return 0;
