@@ -19,6 +19,10 @@ int factorial(int number) {
     return number * factorial(number - 1);
 }
 
+int subtract_two_number(int a, int b) {
+    return a - b;
+}
+
 int multiply(const std::vector<int>& numbers) {
    int total = 1;
    for(const int number : numbers) {
